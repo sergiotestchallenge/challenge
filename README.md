@@ -6,12 +6,19 @@ Use a command prompt and locate in the directory "codechallenge"
 Run the follow commands:
 
 docker build --tag suscribers-public:1.0 challenge-public
+
 docker build --tag suscribers-email:1.0 challenge-email
+
 docker build --tag suscribers:1.0 challenge
+
 docker network create mynet
+
 docker container run --network mynet --name suscribers-email suscribers-email:1.0
+
 docker container run -p 9000:9000 --network mynet --name suscribers-public suscribers-public:1.0
+
 docker container run --network mynet --name suscribers suscribers:1.0
+
 
 2.USE:
 ------
