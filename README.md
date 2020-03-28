@@ -41,7 +41,7 @@ Example of json request:
 
 More documentation of the endpoint in http://localhost:9000/swagger-ui.html
 
-3. LIBRARIES
+3.LIBRARIES
 ------------
 spring-cloud-starter-openfeign	:	it is a declarative web service client, I used it because is easy to use and it allows you to save a lot of time.
 
